@@ -1,98 +1,102 @@
 <div align="center">
 
-# 🏥 Aarogya — Hospital Management System
-**A Modern Java Swing & MySQL Desktop Application for Comprehensive Healthcare Administration**
+# 🏥 AAROGYA — Hospital Management System
+### ⚡ Enterprise Healthcare Operations & Appointment Scheduling Portal
 
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Swing](https://img.shields.io/badge/GUI-Java%20Swing-blue?style=for-the-badge)](https://docs.oracle.com/javase/tutorial/uiswing/)
-[![Architecture](https://img.shields.io/badge/Pattern-DAO%20Architecture-teal?style=for-the-badge)]()
+[![Java](https://img.shields.io/badge/Java-JDK_20+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Swing](https://img.shields.io/badge/GUI-Java%20Swing-007396?style=for-the-badge&logo=java&logoColor=white)](https://docs.oracle.com/javase/tutorial/uiswing/)
+[![Architecture](https://img.shields.io/badge/Design_Pattern-DAO_Architecture-00897B?style=for-the-badge)]()
+[![SDG Goal](https://img.shields.io/badge/UN_SDG-Goal_3_Good_Health-4C9F38?style=for-the-badge&logo=united-nations&logoColor=white)](https://sdgs.un.org/goals/goal3)
+
+<p align="center">
+  A high-performance desktop application engineered in <b>Java Swing</b> and <b>MySQL</b> designed to streamline clinic workflows, automate doctor-patient consultations, manage historical visit logs, and track real-time ward bed allocations.
+</p>
 
 </div>
 
 ---
 
-## 📖 Overview
+## 📌 Executive Summary & Problem Scope
 
-**Aarogya** is an enterprise-grade desktop hospital management portal engineered in **Java (Swing)** and backed by a **MySQL** relational database. It streamlines end-to-end clinical workflows: automating appointment reservations with collision checks, organizing patient medical visit records, maintaining doctor consultation rosters, and orchestrating ward bed occupancy across hospital units.
+Modern healthcare centers require reliable, paperless, and synchronized record management. **AAROGYA** addresses administrative bottlenecks by providing an intuitive desktop interface backed by transactional database operations:
 
----
-
-## 🎯 Problem Statement & Scope
-
-* **Collision-Free Scheduling**: Prevents doctor double-booking by validating real-time slot and time availability.
-* **Centralized Patient Management**: Offers patient intake, lookup, and historical appointment log generation.
-* **Dynamic Bed & Ward Allocation**: Tracks live occupancy status (`Available` vs `Occupied`) across General, ICU, and Maternity wards.
-* **Relational Integrity**: Enforces strict database transaction control and cascading deletions across appointments and ward records.
-* **UN SDG 3 Alignment**: Supports **UN Sustainable Development Goal 3 (Good Health and Well-Being)** by eliminating administrative bottlenecks and reducing patient wait times.
+* 🩺 **Collision-Free Doctor Scheduling**: Eliminates double-booking with real-time slot and time availability validation.
+* 📋 **Centralized Patient Records**: Automates patient intake, lookup, and historical appointment log generation.
+* 🛏️ **Real-Time Ward & Bed Tracking**: Dynamically monitors bed status (`Available` vs `Occupied`) across General, ICU, and Maternity units.
+* 🛡️ **Relational Data Integrity**: Enforces strict database transaction control and cascading deletions across linked tables (`ON DELETE CASCADE`)[cite: 7].
+* 🌍 **UN SDG 3 Alignment**: Contributes directly to **UN Sustainable Development Goal 3 (Good Health and Well-Being)** by reducing wait times and optimizing essential resource distribution.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🛠️ Tech Stack & System Architecture
 
-* **Core Language:** Java (JDK 20+)
-* **User Interface:** Java Swing (`javax.swing`, `java.awt`) with custom UI theming
-* **Database Engine:** MySQL 8.0
-* **Database Connectivity:** JDBC (`mysql-connector-j`)
-* **Design Pattern:** Data Access Object (DAO) Pattern & POJO Data Models
-* **Development Environment:** JetBrains IntelliJ IDEA / VS Code
-
----
-
-## ✨ Key System Modules
-
-| Module | Description |
+| Layer | Technologies / Frameworks |
 | :--- | :--- |
-| **Authentication Gate** | Secure credential validation portal for administrative hospital staff. |
-| **KPI Dashboard** | Real-time overview summarizing total patients, registered doctors, and ward bed occupancy ratios. |
-| **Patient Directory** | Comprehensive patient registry with instant ID search, delete protection, and visit history logs. |
-| **Appointment Engine** | Dynamic booking system mapping patient IDs to doctors, dates, and dedicated time slots. |
-| **Doctor Directory** | Medical staff registry showcasing clinical specializations, consultation days, and active hours. |
-| **Bed Management** | Automated admission and discharge system managing beds across General, ICU, and Maternity units. |
+| **☕ Core Language** | Java (JDK 20+) |
+| **🎨 GUI Framework** | Java Swing (`javax.swing`, `java.awt`) with custom visual theming |
+| **🗄️ Relational Database** | MySQL Server 8.0 & MySQL Workbench |
+| **🔌 Database Connectivity** | JDBC Driver (`mysql-connector-j-8.x.jar`) |
+| **🏛️ Software Architecture** | Data Access Object (DAO) Pattern & POJO Data Models |
+| **💻 IDE** | JetBrains IntelliJ IDEA / Visual Studio Code |
 
 ---
 
-## 📸 Interface Walkthrough
+## 🚀 Core Functional Modules
 
-### 1. Dashboard Overview
+* 🔐 **Admin Authentication Gate (`LoginFrame`)**: Secure administrative credential verification.
+* 📊 **Executive KPI Dashboard (`MainWindow`)**: Live hospital metrics tracking total patients, active doctors, and occupied bed ratios.
+* 👤 **Patient Directory & History (`PatientFrame`)**: Patient registration form, instant ID query, deletion cascade, and appointment history dialogs[cite: 7].
+* 📅 **Appointment Management (`AppointmentFrame`)**: Dynamic slot booking linking registered patients, specialist doctors, dates, and dedicated consultation hours[cite: 3].
+* 🩺 **Doctor Availability Roster (`DoctorFrame`)**: Directory displaying physician names, specializations, consulting days, and time slots.
+* 🏥 **Beds & Ward Management (`BedFrame`)**: Real-time bed allocation and discharge interface supporting multi-ward operations[cite: 5].
+
+---
+
+## 📸 Graphical User Interface Walkthrough
+
+### 📊 1. Executive Admin Dashboard Overview
 <img src="https://github.com/user-attachments/assets/aa929cca-dcd7-41d6-b21a-9689fe5df356" width="100%" alt="Dashboard Overview" />
 
 <br>
 
-### 2. Patient Directory & Registration
+### 👤 2. Patient Directory & Historical Records
 <img src="https://github.com/user-attachments/assets/da8eab7a-2109-447a-96c3-5869567d9fa6" width="100%" alt="Patient Directory & Registration" />
 
 <br>
 
-### 3. Appointment Booking Management
+### 📅 3. Appointment Booking & Consultation Scheduler
 <img src="https://github.com/user-attachments/assets/026bdb94-e878-46ed-a635-c111186227bd" width="100%" alt="Appointment Booking Management" />
 
 <br>
 
-### 4. Beds & Ward Allocation
+### 🛏️ 4. Ward Bed Management & Patient Allocation
 <img src="https://github.com/user-attachments/assets/d933c346-5251-4be0-8c85-ceb0baea8863" width="100%" alt="Beds & Ward Allocation" />
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Organization
 
 ```text
-Aarogya-Hospital-Management-System/
-├── src/
-│   └── org/example/
-│       ├── DBConnection.java          # JDBC Database connection manager
-│       ├── MainWindow.java            # Central KPI dashboard interface
-│       ├── LoginFrame.java            # Authentication window
-│       ├── PatientFrame.java          # Patient intake & history UI
-│       ├── AppointmentFrame.java      # Appointment booking UI
-│       ├── DoctorFrame.java           # Doctor directory interface
-│       ├── BedFrame.java              # Ward bed allocation interface
-│       ├── Theme.java                 # UI styling & color constants
-│       ├── Patient.java / PatientDAO.java
-│       ├── Appointment.java / AppointmentDAO.java
-│       ├── Bed.java / BedDAO.java
-│       └── DoctorDAO.java
-├── database/
-│   └── AAROGYA.sql                    # Complete MySQL schema & seed data
-├── .gitignore
-└── README.md
+AAROGYA_HOSPITAL/
+├── 📁 src/
+│   └── 📁 org/example/
+│       ├── 📄 DBConnection.java          # JDBC MySQL Connection Manager
+│       ├── 📄 MainWindow.java            # Main Dashboard GUI & KPI Metrics
+│       ├── 📄 LoginFrame.java            # Admin Authentication Frame
+│       ├── 📄 PatientFrame.java          # Patient Registration & History UI
+│       ├── 📄 AppointmentFrame.java      # Doctor Slot Scheduling UI
+│       ├── 📄 DoctorFrame.java           # Doctor Directory UI
+│       ├── 📄 BedFrame.java              # Ward Bed Allocation UI
+│       ├── 📄 Theme.java                 # UI Color Palette & Custom Styling
+│       ├── 📄 Patient.java / PatientDAO.java
+│       ├── 📄 Appointment.java / AppointmentDAO.java
+│       ├── 📄 Bed.java / BedDAO.java
+│       ├── 📄 DoctorDAO.java
+│       └── 📄 Ward.java / WardDAO.java
+├── 📁 database/
+│   └── 📄 AAROGYA.sql                    # MySQL Schema, Constraints & Seed Data
+├── 📁 lib/
+│   └── 📦 mysql-connector-j-8.x.jar     # JDBC MySQL Driver
+├── 📄 .gitignore
+└── 📄 README.md
