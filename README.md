@@ -100,3 +100,54 @@ AAROGYA_HOSPITAL/
 │   └── 📦 mysql-connector-j-8.x.jar     # JDBC MySQL Driver
 ├── 📄 .gitignore
 └── 📄 README.md
+⚙️ Setup & Installation Guide
+📋 1. Prerequisites
+☕ Java Development Kit (JDK 20+)
+
+🗄️ [suspicious link removed] & MySQL Workbench
+
+🔌 MySQL Connector/J (.jar)
+
+🗄️ 2. Database Initialization
+Start your local MySQL Server.
+
+Open MySQL Workbench and execute the database script located in database/AAROGYA.sql.
+
+Configure your local database credentials inside src/org/example/DBConnection.java:
+
+Java
+public class DBConnection {
+    private static final String URL = "jdbc:mysql://localhost:3306/aarogya";
+    private static final String USER = "root";
+    private static final String PASSWORD = "your_mysql_password";
+
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
+}
+🚀 3. Build & Execution
+🔹 Using IntelliJ IDEA / Eclipse:
+Clone the repository:
+
+Bash
+git clone [https://github.com/navadiadharmik05-hub/AAROGYA_HOSPITAL.git](https://github.com/navadiadharmik05-hub/AAROGYA_HOSPITAL.git)
+Open the project root directory in your IDE.
+
+Add mysql-connector-j-8.x.jar as a project library dependency (Project Structure > Libraries / Modules).
+
+Run MainWindow.java or LoginFrame.java[cite: 6].
+
+🔹 Using Terminal / Command Line:
+Bash
+# 1. Navigate to the source folder
+cd src
+
+# 2. Compile all Java files with the JDBC driver in classpath
+javac -cp ".;../lib/mysql-connector-j-8.x.jar" org/example/*.java
+
+# 3. Launch the Application
+java -cp ".;../lib/mysql-connector-j-8.x.jar" org.example.MainWindow
+👥 Contributors & Acknowledgements
+👨‍💻 Dharmik J Navadia — (@navadiadharmik05-hub)
+
+🎓 Project Guide: Ms. Rupali Shinde (Assistant Professor, Department of Electronics & Computer Science, SAKEC)
