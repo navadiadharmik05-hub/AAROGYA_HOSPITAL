@@ -89,7 +89,6 @@ The MySQL schema (`database/AAROGYA.sql`) models the following core entities and
 
 Referential integrity is enforced with foreign keys and `ON DELETE CASCADE`, so removing a patient automatically cleans up their dependent appointment and bed-allocation records.
 
-> 💡 *Tip: Add an ER diagram image here (e.g. `docs/er-diagram.png`) for a quick visual reference of table relationships.*
 
 ---
 
