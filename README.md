@@ -54,22 +54,23 @@
 
 ## 📸 Interface Walkthrough
 
-<div align="center">
+### 1. Dashboard Overview
+<img src="https://github.com/user-attachments/assets/aa929cca-dcd7-41d6-b21a-9689fe5df356" width="100%" alt="Dashboard Overview" />
 
-### 🖥️ Dashboard & Patient Directory
+<br>
 
+### 2. Patient Directory & Registration
+<img src="https://github.com/user-attachments/assets/da8eab7a-2109-447a-96c3-5869567d9fa6" width="100%" alt="Patient Directory & Registration" />
 
-| <img src="https://github.com/user-attachments/assets/aa929cca-dcd7-41d6-b21a-9689fe5df356" width="100%" alt="Dashboard Overview" /> | 
-<img src="https://github.com/user-attachments/assets/da8eab7a-2109-447a-96c3-5869567d9fa6" width="100%" alt="Patient Directory" /> |
+<br>
 
-### 🩺 Appointments & Ward Bed Allocation
+### 3. Appointment Booking Management
+<img src="https://github.com/user-attachments/assets/026bdb94-e878-46ed-a635-c111186227bd" width="100%" alt="Appointment Booking Management" />
 
+<br>
 
-
-| <img src="https://github.com/user-attachments/assets/026bdb94-e878-46ed-a635-c111186227bd" width="100%" alt="Appointment Booking" /> | 
-<img src="https://github.com/user-attachments/assets/d933c346-5251-4be0-8c85-ceb0baea8863" width="100%" alt="Bed Management" /> |
-
-</div>
+### 4. Beds & Ward Allocation
+<img src="https://github.com/user-attachments/assets/d933c346-5251-4be0-8c85-ceb0baea8863" width="100%" alt="Beds & Ward Allocation" />
 
 ---
 
