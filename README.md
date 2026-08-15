@@ -58,15 +58,14 @@
 
 ### 🖥️ Dashboard & Patient Directory
 
-| Dashboard Overview | Patient Directory & History |
-| :---: | :---: |
+
 | <img src="https://github.com/user-attachments/assets/aa929cca-dcd7-41d6-b21a-9689fe5df356" width="100%" alt="Dashboard Overview" /> | 
 <img src="https://github.com/user-attachments/assets/da8eab7a-2109-447a-96c3-5869567d9fa6" width="100%" alt="Patient Directory" /> |
 
 ### 🩺 Appointments & Ward Bed Allocation
 
-| Appointment Booking | Beds & Ward Allocation |
-| :---: | :---: |
+
+
 | <img src="https://github.com/user-attachments/assets/026bdb94-e878-46ed-a635-c111186227bd" width="100%" alt="Appointment Booking" /> | 
 <img src="https://github.com/user-attachments/assets/d933c346-5251-4be0-8c85-ceb0baea8863" width="100%" alt="Bed Management" /> |
 
