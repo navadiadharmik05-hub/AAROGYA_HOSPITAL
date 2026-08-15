@@ -34,7 +34,7 @@ A robust desktop application built using **Java Swing**, **JDBC**, and **MySQL**
 ---
 
 ## 📸 Screenshots
-| Dashboard Overview | Patient Directory & History |
+| Dashboard Overview |
 | :---: | :---: |
 | *(<img width="869" height="611" alt="image" src="https://github.com/user-attachments/assets/aa929cca-dcd7-41d6-b21a-9689fe5df356" />)*
 
@@ -42,7 +42,7 @@ A robust desktop application built using **Java Swing**, **JDBC**, and **MySQL**
 | :---: | :---: |
 |*(<img width="1023" height="630" alt="image" src="https://github.com/user-attachments/assets/da8eab7a-2109-447a-96c3-5869567d9fa6" />)* |
 
-| Appointment Booking | Beds & Ward Allocation |
+| Appointment Booking | 
 | :---: | :---: |
 | *(<img width="1007" height="634" alt="image" src="https://github.com/user-attachments/assets/026bdb94-e878-46ed-a635-c111186227bd" />)* |
 
